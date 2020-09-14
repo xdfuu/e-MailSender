@@ -1,24 +1,13 @@
 import smtplib, ssl
 
 port = 587  # For starttls
-smtp_server = "smtp.gmail.com"
-sender_email = "turquase.development@gmail.com"
-receiver_email = "xdfuu.blockchain@zohomail.com"
+smtp_server = "smtp.gmail.com" # for gmail. you can choose hotmail or another email services.
+sender_email = "sendermail@example.com"
+receiver_email = "receivermail@example.com"
 password = input("Type your password and press enter:")
 message = """\
-Subject: Riot Games Username Assistance
-Username Assistance
-Below you will find the accounts associated with your email address: oxobis58@gmail.com.
-Riot Account username(s) associated with a League of Legends region
 
-Turkey
-highdose558
-
-
-
-GLHF,
-Riot Games
-
+    Your Message is here.
 """
 
 context = ssl.create_default_context()
